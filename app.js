@@ -1,5 +1,5 @@
 function htmlspecialchars(formData) {
-    // Insert your code here
+    return formData.replaceAll('&', '&amp;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
 }
 
 console.log(htmlspecialchars("<h2>Hello World</h2>")); // "&lt;h2&gt;Hello World&lt;/h2&gt;"
